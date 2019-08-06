@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b3ee2825015347ef8c465848e24a8cc4",
+    "revision": "29b9a9263ee9490892a112ca87c6085d",
     "url": "/thinkful-ei-emu/andrewyin-capstone-1/index.html"
   },
   {
-    "revision": "1354bf34a5895ba824ae",
+    "revision": "008fffde0666203ad563",
     "url": "/thinkful-ei-emu/andrewyin-capstone-1/static/css/main.b4c1e790.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/thinkful-ei-emu/andrewyin-capstone-1/static/js/2.d6a534e5.chunk.js"
   },
   {
-    "revision": "1354bf34a5895ba824ae",
-    "url": "/thinkful-ei-emu/andrewyin-capstone-1/static/js/main.16ca6a8c.chunk.js"
+    "revision": "008fffde0666203ad563",
+    "url": "/thinkful-ei-emu/andrewyin-capstone-1/static/js/main.9ce14fe7.chunk.js"
   },
   {
     "revision": "8322dc088552a46f2611",
