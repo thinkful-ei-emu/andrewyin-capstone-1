@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/thinkful-ei-emu/andrewyin-capstone-1/static/css/main.b4c1e790.chunk.css",
-    "main.js": "/thinkful-ei-emu/andrewyin-capstone-1/static/js/main.9ce14fe7.chunk.js",
-    "main.js.map": "/thinkful-ei-emu/andrewyin-capstone-1/static/js/main.9ce14fe7.chunk.js.map",
-    "runtime~main.js": "/thinkful-ei-emu/andrewyin-capstone-1/static/js/runtime~main.b60ce80e.js",
-    "runtime~main.js.map": "/thinkful-ei-emu/andrewyin-capstone-1/static/js/runtime~main.b60ce80e.js.map",
-    "static/js/2.d6a534e5.chunk.js": "/thinkful-ei-emu/andrewyin-capstone-1/static/js/2.d6a534e5.chunk.js",
-    "static/js/2.d6a534e5.chunk.js.map": "/thinkful-ei-emu/andrewyin-capstone-1/static/js/2.d6a534e5.chunk.js.map",
-    "index.html": "/thinkful-ei-emu/andrewyin-capstone-1/index.html",
-    "precache-manifest.c506dc2c56886e51421af2df93d6cf5a.js": "/thinkful-ei-emu/andrewyin-capstone-1/precache-manifest.c506dc2c56886e51421af2df93d6cf5a.js",
-    "service-worker.js": "/thinkful-ei-emu/andrewyin-capstone-1/service-worker.js",
-    "static/css/main.b4c1e790.chunk.css.map": "/thinkful-ei-emu/andrewyin-capstone-1/static/css/main.b4c1e790.chunk.css.map"
+    "main.css": "/andrewyin-capstone-1/static/css/main.b4c1e790.chunk.css",
+    "main.js": "/andrewyin-capstone-1/static/js/main.e2fa131d.chunk.js",
+    "main.js.map": "/andrewyin-capstone-1/static/js/main.e2fa131d.chunk.js.map",
+    "runtime~main.js": "/andrewyin-capstone-1/static/js/runtime~main.546c0924.js",
+    "runtime~main.js.map": "/andrewyin-capstone-1/static/js/runtime~main.546c0924.js.map",
+    "static/js/2.d6a534e5.chunk.js": "/andrewyin-capstone-1/static/js/2.d6a534e5.chunk.js",
+    "static/js/2.d6a534e5.chunk.js.map": "/andrewyin-capstone-1/static/js/2.d6a534e5.chunk.js.map",
+    "index.html": "/andrewyin-capstone-1/index.html",
+    "precache-manifest.742177071aea32a45cd7e194354f693b.js": "/andrewyin-capstone-1/precache-manifest.742177071aea32a45cd7e194354f693b.js",
+    "service-worker.js": "/andrewyin-capstone-1/service-worker.js",
+    "static/css/main.b4c1e790.chunk.css.map": "/andrewyin-capstone-1/static/css/main.b4c1e790.chunk.css.map"
   }
 }
