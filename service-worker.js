@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/thinkful-ei-emu/andrewyin-capstone-1/precache-manifest.c506dc2c56886e51421af2df93d6cf5a.js"
+  "/thinkful-ei-emu/andrewyin-capstone-1/precache-manifest.5361661c8ee2524d2377e988a698db27.js"
 );
 
 self.addEventListener('message', (event) => {
