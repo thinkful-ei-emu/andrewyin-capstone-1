@@ -23,7 +23,7 @@ class App extends React.Component {
   addCharacter = (newCharacter) => {
     // console.log(newCharacter);
     CharactersAPIService.addCharacter(newCharacter);
-    // this.setState({
+    // this .setState({
     //   characters: [...this.state.characters, newCharacter]
     // });
   }

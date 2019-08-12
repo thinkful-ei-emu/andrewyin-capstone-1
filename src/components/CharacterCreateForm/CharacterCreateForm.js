@@ -30,7 +30,7 @@ class CharacterCreateForm extends React.Component {
 
   cancelButtonClick = (e) => {
     this.resetFields();
-  }
+  } 
 
   render() {
     return (
