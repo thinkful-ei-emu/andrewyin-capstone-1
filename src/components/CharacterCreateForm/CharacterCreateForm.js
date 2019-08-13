@@ -1,7 +1,12 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import CharactersAPIService from '../../services/characters-api-service';
 
 class CharacterCreateForm extends React.Component {
+
+  addCharacter = (newCharacter) => {
+    CharactersAPIService.addCharacter(newCharacter);
+  }
 
   resetFields = () => {
     document.getElementById('charName').value = '';
@@ -18,7 +23,7 @@ class CharacterCreateForm extends React.Component {
     const charClass = e.target.charClass.value;
     const charDesc = e.target.charDesc.value;
 
-    this.props.addCharacter({
+    this.addCharacter({
       charName,
       charRace,
       charClass,

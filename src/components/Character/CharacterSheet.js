@@ -8,7 +8,7 @@ class CharacterSheet extends React.Component {
 
   async componentDidMount() {
     try {
-      const charId = this.props.match.params.id;
+      const charId = this.props.match.params.charId;
       const character = await CharacterAPIService.getCharacterById(charId);
       this.context.setChar(character);
     }

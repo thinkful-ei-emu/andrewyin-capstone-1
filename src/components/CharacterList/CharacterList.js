@@ -2,7 +2,7 @@
 import React from 'react';
 
 import CharacterThumbnail from '../Character/CharacterThumbnail';
-import CharacterAPISerivce from '../../services/characters-api-service';
+import CharacterAPIService from '../../services/characters-api-service';
 import CharacterListContext from '../../contexts/CharacterListContext';
 
 class CharacterList extends React.Component {
@@ -11,21 +11,21 @@ class CharacterList extends React.Component {
 
   async componentDidMount() {
     try {
-      const characters = await CharacterAPISerivce.getAllCharacters();
+      const characters = await CharacterAPIService.getAllCharacters();
       this.context.setCharactersList(characters);
     }
     catch (e) {
+      console.error(e);
       this.context.setError(e);
     }
   }
 
   render() {
     const characters = this.context.characters.map((character, index) => {
-      console.log(character.charName);
       return (
         <CharacterThumbnail
           key={index}
-          id={character.id}
+          charId={character.charId}
           charName={character.charName}
           charRace={character.charRace}
           charClass={character.charClass}

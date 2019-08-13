@@ -6,7 +6,7 @@ import './Character.css';
 class CharacterThumbnail extends React.Component {
   render() {
     return (
-      <Link to={`/characters/${this.props.id}`}>
+      <Link to={`/characters/${this.props.charId}`}>
         <div className="character">
           <p>{this.props.charName}</p>
           <p>{this.props.charRace}</p>

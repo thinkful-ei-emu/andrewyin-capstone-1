@@ -8,55 +8,45 @@ import Header from '../Header/Header';
 import CharacterList from '../CharacterList/CharacterList';
 import CharacterSheet from '../Character/CharacterSheet';
 import CharacterCreateForm from '../CharacterCreateForm/CharacterCreateForm';
-import CharactersAPIService from '../../services/characters-api-service';
+// import CharactersAPIService from '../../services/characters-api-service';
+import LoginPage from '../Login/LoginPage';
+import NotFoundPage from '../NotFound/NotFoundPage';
+import PublicOnlyRoute from '../Utils/PublicOnlyRoute';
+import PrivateRoute from '../Utils/PrivateRoute';
+import LandingPageRoute from '../Utils/LandingPageRoute';
 
 class App extends React.Component {
-
-  // constructor(props) {
-  //   super(props);
-
-  //   this.state = {
-  //     characters: [...VoxMachina]
-  //   };
-  // }
-
-  addCharacter = (newCharacter) => {
-    // console.log(newCharacter);
-    CharactersAPIService.addCharacter(newCharacter);
-    // this .setState({
-    //   characters: [...this.state.characters, newCharacter]
-    // });
-  }
-
   render() {
     return <>
       <Header />
-      
+
       <Switch>
         <Route
           exact
-          path={'/characters'}
-          component={CharacterList}       
+          path={'/'}
+          component={LandingPageRoute}
         />
-        <Route
-          path={'/characters/:id'}
-          render={({ match, history }) => {
-            return <CharacterSheet
-              match={match}
-              history={history}
-              // characters={this.state.characters}
-            />;
-          }}
-        />
-        <Route
+        <PublicOnlyRoute
           exact
-          path={'/create'}
-          render={({ history }) => {
-            return <CharacterCreateForm
-              history={history}
-              addCharacter={this.addCharacter}
-            />;
-          }}
+          path={'/login'}
+          component={LoginPage}
+        />
+        <PrivateRoute
+          exact
+          path={'/characters'}
+          component={CharacterList}
+        />
+        <PrivateRoute
+          exact
+          path={'/characters/create'}
+          component={CharacterCreateForm}
+        />
+        <PrivateRoute
+          path={'/characters/:charId'}
+          component={CharacterSheet}
+        />
+        <Route
+          component={NotFoundPage}
         />
       </Switch>
     </>;
