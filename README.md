@@ -1,5 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## Test Accounts
+user: mmercer<br>
+password: howdoyouwanttodothis<br>
+<br><br>
+user: voxMachina<br>
+password: codenamecriticalrole
+
 ## Available Scripts
 
 In the project directory, you can run:
