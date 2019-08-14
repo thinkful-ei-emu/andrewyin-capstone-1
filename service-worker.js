@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/andrewyin-capstone-1/precache-manifest.742177071aea32a45cd7e194354f693b.js"
+  "/andrewyin-capstone-1/precache-manifest.d171b47700b339283010fa8668dc9046.js"
 );
 
 self.addEventListener('message', (event) => {
