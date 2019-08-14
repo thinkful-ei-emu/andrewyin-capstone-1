@@ -16,7 +16,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://thinkful-ei-emu.github.io/andrewyin-capstone-1/",
+  "homepage": "https://thinkful-ei-emu.github.io/andrewyin-capstone1-client",
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -37,6 +37,6 @@
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.14.3",
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.1.1"
   }
 }
