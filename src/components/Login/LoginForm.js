@@ -63,9 +63,10 @@ class LoginForm extends React.Component {
         </input>
 
         <br />
-
-        <button type='submit'>Login</button>
-        <input type='reset' value='Clear'></input>
+        <section className='buttonSection'>
+          <button className='loginButton' type='submit'>Login</button>
+          <input className='loginButton' type='reset' value='Clear'></input>
+        </section>
       </form>
     );
   }

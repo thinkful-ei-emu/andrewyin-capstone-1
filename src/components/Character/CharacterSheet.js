@@ -3,6 +3,8 @@ import React from 'react';
 import CharacterContext from '../../contexts/CharacterContext';
 import CharacterAPIService from '../../services/characters-api-service';
 
+import './CharacterSheet.css';
+
 class CharacterSheet extends React.Component {
   static contextType = CharacterContext;
 
@@ -20,7 +22,7 @@ class CharacterSheet extends React.Component {
   render() {
     const character = this.context.character;
     return (
-      <div className='CharacterSheet'>
+      <div className='characterSheet'>
         <p id='charName'>{`Name: ${character.charName}`}</p>
         <p id='charName'>{`Race: ${character.charRace}`}</p>
         <p id='charName'>{`Class: ${character.charClass}`}</p>

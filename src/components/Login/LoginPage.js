@@ -1,6 +1,8 @@
 import React from 'react';
 import LoginForm from './LoginForm';
 
+import './LoginPage.css';
+
 class LoginPage extends React.Component {
   static defaultProps = {
     location: {},
@@ -17,11 +19,15 @@ class LoginPage extends React.Component {
 
   render() {
     return (
-      <section className='LoginPage'>
-        <h2>Login</h2>
-        <LoginForm
-          onLoginSuccess={this.onLoginSuccess}
-        />
+      <section className='loginPage'>
+        <fieldset>
+          <legend>
+            <h2>Login</h2>
+          </legend>
+          <LoginForm
+            onLoginSuccess={this.onLoginSuccess}
+          />
+        </fieldset>
       </section>
     );
   }

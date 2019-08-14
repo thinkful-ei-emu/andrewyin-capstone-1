@@ -4,6 +4,7 @@ import React from 'react';
 import CharacterThumbnail from '../Character/CharacterThumbnail';
 import CharacterAPIService from '../../services/characters-api-service';
 import CharacterListContext from '../../contexts/CharacterListContext';
+import './CharacterList.css';
 
 class CharacterList extends React.Component {
 
@@ -34,9 +35,9 @@ class CharacterList extends React.Component {
       );
     });
     return (
-      <div className='CharacterList'>
+      <ul className='characterList'>
         {characters}
-      </div>
+      </ul>
     );
   }
 }

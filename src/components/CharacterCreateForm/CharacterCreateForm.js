@@ -1,8 +1,24 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import CharactersAPIService from '../../services/characters-api-service';
+import './CharacterCreateForm.css';
 
 class CharacterCreateForm extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      tabOptions: [
+        'details',
+        'equipment',
+        'abilityScores',
+        'classFeatures',
+        'spellsList'
+      ],
+      currentActive: 'details'
+    };
+  }
 
   addCharacter = (newCharacter) => {
     CharactersAPIService.addCharacter(newCharacter);
@@ -35,11 +51,11 @@ class CharacterCreateForm extends React.Component {
 
   cancelButtonClick = (e) => {
     this.resetFields();
-  } 
+  }
 
   render() {
     return (
-      <form className='CharacterCreateForm'
+      <form className='characterCreateForm'
         onSubmit={this.handleFormSubmit}
       >
         <label htmlFor='charName'>Name: </label>
@@ -54,8 +70,10 @@ class CharacterCreateForm extends React.Component {
         <label htmlFor='charDesc'>Description: </label>
         <textarea id='charDesc' name='charDesc'></textarea>
         <br />
-        <button type='submit'>Submit</button>
-        <button type='button' onClick={this.cancelButtonClick}>Cancel</button>
+        <section className='submitSection'>
+          <button type='submit'>Submit</button>
+          <button type='button' onClick={this.cancelButtonClick}>Cancel</button>
+        </section>
       </form>
     );
   }

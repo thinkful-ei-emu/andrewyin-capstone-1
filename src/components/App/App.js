@@ -5,6 +5,7 @@ import './App.css';
 // import VoxMachina from '../../store';
 
 import Header from '../Header/Header';
+import HamburgerMenu from '../Hamburger/HamburgerMenu';
 import CharacterList from '../CharacterList/CharacterList';
 import CharacterSheet from '../Character/CharacterSheet';
 import CharacterCreateForm from '../CharacterCreateForm/CharacterCreateForm';
@@ -18,37 +19,42 @@ import LandingPageRoute from '../Utils/LandingPageRoute';
 class App extends React.Component {
   render() {
     return <>
-      <Header />
+      <Route
+        path='/characters'
+        component={HamburgerMenu}
+      />
 
-      <Switch>
-        <Route
-          exact
-          path={'/'}
-          component={LandingPageRoute}
-        />
-        <PublicOnlyRoute
-          exact
-          path={'/login'}
-          component={LoginPage}
-        />
-        <PrivateRoute
-          exact
-          path={'/characters'}
-          component={CharacterList}
-        />
-        <PrivateRoute
-          exact
-          path={'/characters/create'}
-          component={CharacterCreateForm}
-        />
-        <PrivateRoute
-          path={'/characters/:charId'}
-          component={CharacterSheet}
-        />
-        <Route
-          component={NotFoundPage}
-        />
-      </Switch>
+      <section className='app'>
+        <Switch>
+          <Route
+            exact
+            path={'/'}
+            component={LandingPageRoute}
+          />
+          <PublicOnlyRoute
+            exact
+            path={'/login'}
+            component={LoginPage}
+          />
+          <PrivateRoute
+            exact
+            path={'/characters'}
+            component={CharacterList}
+          />
+          <PrivateRoute
+            exact
+            path={'/characters/create'}
+            component={CharacterCreateForm}
+          />
+          <PrivateRoute
+            path={'/characters/:charId'}
+            component={CharacterSheet}
+          />
+          <Route
+            component={NotFoundPage}
+          />
+        </Switch>
+      </section>
     </>;
   }
 }

@@ -1,0 +1,25 @@
+.loginPage {
+  width: 300px;
+}
+
+.loginPage h2 {
+  margin: 20px 0;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.buttonSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.loginButton {
+  width: 45%;
+}

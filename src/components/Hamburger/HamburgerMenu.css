@@ -1,0 +1,77 @@
+nav {
+  z-index: 1
+}
+
+.side-nav button {
+  background: none;
+  border: none;
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  width: 0;
+  height: 100vh;
+  box-shadow: 1px 0 10px lightgray;
+  overflow-x: hidden;
+  transition: 0.5s;
+  background: white;
+  z-index: 2;
+}
+
+.side-nav .nav-link {
+  margin: 5px 0;
+  padding-left: 20px;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.nav-close {
+  width: 100%;
+  text-align: right;
+}
+
+.closeBtn {
+  margin: 10px 0 5px 0;
+  text-align: right;
+  font-size: 40px;
+}
+
+.nav-open {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  background: white;
+  padding: 10px 10px;
+  box-shadow: 0 1px 10px rgb(230, 230, 230);
+  overflow-y: hidden;
+  z-index: 1;
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  height: 28px;
+}
+.hamburger-bar {
+  border: 1px solid gray;
+  border-radius: 10px;
+  /* background: black; */
+  height: 8px;
+  width: 40px;
+}
+
+/* @media only screen and (min-width: 450px) {
+  .side-nav {
+    display: none;
+  }
+  .nav-open {
+    display: none;
+  }
+} */
