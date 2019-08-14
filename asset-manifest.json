@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/andrewyin-capstone-1-client/static/css/main.1672242d.chunk.css",
-    "main.js": "/andrewyin-capstone-1-client/static/js/main.40c89baa.chunk.js",
-    "main.js.map": "/andrewyin-capstone-1-client/static/js/main.40c89baa.chunk.js.map",
-    "runtime~main.js": "/andrewyin-capstone-1-client/static/js/runtime~main.4ea6bef2.js",
-    "runtime~main.js.map": "/andrewyin-capstone-1-client/static/js/runtime~main.4ea6bef2.js.map",
-    "static/js/2.8a06cb5b.chunk.js": "/andrewyin-capstone-1-client/static/js/2.8a06cb5b.chunk.js",
-    "static/js/2.8a06cb5b.chunk.js.map": "/andrewyin-capstone-1-client/static/js/2.8a06cb5b.chunk.js.map",
-    "index.html": "/andrewyin-capstone-1-client/index.html",
-    "precache-manifest.0b44367e2ce8358a3a362e65c989d897.js": "/andrewyin-capstone-1-client/precache-manifest.0b44367e2ce8358a3a362e65c989d897.js",
-    "service-worker.js": "/andrewyin-capstone-1-client/service-worker.js",
-    "static/css/main.1672242d.chunk.css.map": "/andrewyin-capstone-1-client/static/css/main.1672242d.chunk.css.map"
+    "main.css": "/andrewyin-capstone1-client/static/css/main.1672242d.chunk.css",
+    "main.js": "/andrewyin-capstone1-client/static/js/main.59fc66a9.chunk.js",
+    "main.js.map": "/andrewyin-capstone1-client/static/js/main.59fc66a9.chunk.js.map",
+    "runtime~main.js": "/andrewyin-capstone1-client/static/js/runtime~main.2f42f21d.js",
+    "runtime~main.js.map": "/andrewyin-capstone1-client/static/js/runtime~main.2f42f21d.js.map",
+    "static/js/2.8a06cb5b.chunk.js": "/andrewyin-capstone1-client/static/js/2.8a06cb5b.chunk.js",
+    "static/js/2.8a06cb5b.chunk.js.map": "/andrewyin-capstone1-client/static/js/2.8a06cb5b.chunk.js.map",
+    "index.html": "/andrewyin-capstone1-client/index.html",
+    "precache-manifest.dbb0e1ce55bd07ac5e6faa115bc2bbb2.js": "/andrewyin-capstone1-client/precache-manifest.dbb0e1ce55bd07ac5e6faa115bc2bbb2.js",
+    "service-worker.js": "/andrewyin-capstone1-client/service-worker.js",
+    "static/css/main.1672242d.chunk.css.map": "/andrewyin-capstone1-client/static/css/main.1672242d.chunk.css.map"
   }
 }
