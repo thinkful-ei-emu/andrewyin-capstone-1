@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/andrewyin-capstone-1/static/css/main.1672242d.chunk.css",
-    "main.js": "/andrewyin-capstone-1/static/js/main.63b41d5e.chunk.js",
-    "main.js.map": "/andrewyin-capstone-1/static/js/main.63b41d5e.chunk.js.map",
-    "runtime~main.js": "/andrewyin-capstone-1/static/js/runtime~main.546c0924.js",
-    "runtime~main.js.map": "/andrewyin-capstone-1/static/js/runtime~main.546c0924.js.map",
-    "static/js/2.8a06cb5b.chunk.js": "/andrewyin-capstone-1/static/js/2.8a06cb5b.chunk.js",
-    "static/js/2.8a06cb5b.chunk.js.map": "/andrewyin-capstone-1/static/js/2.8a06cb5b.chunk.js.map",
-    "index.html": "/andrewyin-capstone-1/index.html",
-    "precache-manifest.d171b47700b339283010fa8668dc9046.js": "/andrewyin-capstone-1/precache-manifest.d171b47700b339283010fa8668dc9046.js",
-    "service-worker.js": "/andrewyin-capstone-1/service-worker.js",
-    "static/css/main.1672242d.chunk.css.map": "/andrewyin-capstone-1/static/css/main.1672242d.chunk.css.map"
+    "main.css": "/andrewyin-capstone-1-client/static/css/main.1672242d.chunk.css",
+    "main.js": "/andrewyin-capstone-1-client/static/js/main.40c89baa.chunk.js",
+    "main.js.map": "/andrewyin-capstone-1-client/static/js/main.40c89baa.chunk.js.map",
+    "runtime~main.js": "/andrewyin-capstone-1-client/static/js/runtime~main.4ea6bef2.js",
+    "runtime~main.js.map": "/andrewyin-capstone-1-client/static/js/runtime~main.4ea6bef2.js.map",
+    "static/js/2.8a06cb5b.chunk.js": "/andrewyin-capstone-1-client/static/js/2.8a06cb5b.chunk.js",
+    "static/js/2.8a06cb5b.chunk.js.map": "/andrewyin-capstone-1-client/static/js/2.8a06cb5b.chunk.js.map",
+    "index.html": "/andrewyin-capstone-1-client/index.html",
+    "precache-manifest.0b44367e2ce8358a3a362e65c989d897.js": "/andrewyin-capstone-1-client/precache-manifest.0b44367e2ce8358a3a362e65c989d897.js",
+    "service-worker.js": "/andrewyin-capstone-1-client/service-worker.js",
+    "static/css/main.1672242d.chunk.css.map": "/andrewyin-capstone-1-client/static/css/main.1672242d.chunk.css.map"
   }
 }
