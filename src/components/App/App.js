@@ -4,7 +4,7 @@ import './App.css';
 
 // import VoxMachina from '../../store';
 
-import Header from '../Header/Header';
+// import Header from '../Header/Header';
 import HamburgerMenu from '../Hamburger/HamburgerMenu';
 import CharacterList from '../CharacterList/CharacterList';
 import CharacterSheet from '../Character/CharacterSheet';
