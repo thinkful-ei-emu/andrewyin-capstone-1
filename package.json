@@ -16,6 +16,10 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "engines": {
+    "npm": "6.10.2",
+    "node": "10.16.0"
+  },
   "homepage": "https://thinkful-ei-emu.github.io/andrewyin-capstone1-client",
   "eslintConfig": {
     "extends": "react-app"
