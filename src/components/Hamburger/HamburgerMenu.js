@@ -14,13 +14,16 @@ function closeSideNav() {
 
 function Hamburger(props) {
   return <>
-    <span id='navOpen' className='nav-open'>
-      <span className='hamburger' onClick={openSideNav}>
-        <div className='hamburger-bar'></div>
-        <div className='hamburger-bar'></div>
-        <div className='hamburger-bar'></div>
-      </span>
-    </span>
+    <div id='navOpen' className='nav-open'>
+      {TokenService.hasAuthToken() &&
+        <span className='hamburger' onClick={openSideNav}>
+          <div className='hamburger-bar'></div>
+          <div className='hamburger-bar'></div>
+          <div className='hamburger-bar'></div>
+        </span>}
+      <h3 className='navbar-header'>5e Stuff</h3>
+    </div>
+
     <nav id='sideNav' className='side-nav'>
       <span className='nav-close' onClick={closeSideNav}>
         <button id='closeBtn' className='closeBtn' >&times;</button>
@@ -32,7 +35,10 @@ function Hamburger(props) {
         <button id='create' className='nav-link' onClick={() => closeSideNav()}>Create</button>
       </Link>
       <Link to={'/'}>
-        <button id='logout' className='nav-link' onClick={() => TokenService.clearAuthToken()}>Logout</button>
+        <button id='logout' className='nav-link' onClick={() => {
+          closeSideNav();
+          TokenService.clearAuthToken();
+        }}>Logout</button>
       </Link>
     </nav>
   </>;

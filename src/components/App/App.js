@@ -17,12 +17,10 @@ import PrivateRoute from '../Utils/PrivateRoute';
 import LandingPageRoute from '../Utils/LandingPageRoute';
 
 class App extends React.Component {
+
   render() {
     return <>
-      <Route
-        path='/characters'
-        component={HamburgerMenu}
-      />
+      <HamburgerMenu />
 
       <section className='app'>
         <Switch>
