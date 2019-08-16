@@ -15,6 +15,7 @@ import NotFoundPage from '../NotFound/NotFoundPage';
 import PublicOnlyRoute from '../Utils/PublicOnlyRoute';
 import PrivateRoute from '../Utils/PrivateRoute';
 import LandingPageRoute from '../Utils/LandingPageRoute';
+// import TokenService from '../../services/token-service';
 
 class App extends React.Component {
 

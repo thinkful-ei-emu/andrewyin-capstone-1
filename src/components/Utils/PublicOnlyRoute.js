@@ -7,11 +7,13 @@ export default function PublicOnlyRoute({ component, ...props }) {
   return (
     <Route
       {...props}
-      render={componentProps => (
-        TokenService.hasAuthToken()
-          ? <Redirect to={'/characters'} />
-          : <Component {...componentProps} />
-      )}
+      render={componentProps => {
+        const hasAuthToken = TokenService.hasAuthToken();
+        return (
+          hasAuthToken
+            ? <Redirect to={'/characters'} />
+            : <Component {...componentProps} />
+        );}}
     />
   );
 }

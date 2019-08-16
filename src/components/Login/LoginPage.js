@@ -4,6 +4,7 @@ import LoginForm from './LoginForm';
 import './LoginPage.css';
 
 class LoginPage extends React.Component {
+
   static defaultProps = {
     location: {},
     history: {

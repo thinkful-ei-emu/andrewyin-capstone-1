@@ -16,7 +16,7 @@ class CharacterCreateForm extends React.Component {
         'classFeatures',
         'spellsList'
       ],
-      currentActive: 'details'
+      currentActive: 'details' 
     };
   }
 

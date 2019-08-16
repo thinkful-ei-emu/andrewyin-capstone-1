@@ -23,7 +23,7 @@ class CharacterProvider extends React.Component {
   }
 
   setError = error => {
-    console.error(error);
+    // console.error(error.message);
     this.setState({ error });
   }
 

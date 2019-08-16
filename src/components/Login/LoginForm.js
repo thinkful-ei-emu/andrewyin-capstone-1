@@ -1,15 +1,17 @@
 import React from 'react';
-import TokenService from '../../services/token-service';
-import AuthAPIService from '../../services/auth-api-service';
+import UserContext from '../../contexts/UserContext';
 
 class LoginForm extends React.Component {
+
+  static contextType = UserContext;
+
   static defaultProps = {
     onLoginSuccess: () => { }
   }
 
   constructor(props) {
     super(props);
-    
+
     this.state = {
       error: null
     };
@@ -21,24 +23,19 @@ class LoginForm extends React.Component {
 
     const { userName, password } = event.target;
 
-    try {
-      const res = await AuthAPIService.postLogin({
-        userName: userName.value,
-        password: password.value
-      });
+    await this.context.login({ 
+      userName: userName.value,
+      password: password.value
+    });
 
-      userName.value = '';
-      password.value = '';
-      TokenService.saveAuthToken(res.authToken);
-      this.props.onLoginSuccess();
-    }
-    catch (e) {
-      console.error(e);
-    }
+    userName.value = '';
+    password.value = '';
+
+    this.props.onLoginSuccess();
   }
 
   render() {
-    const { error } = this.state;
+    const error = this.context.error;
     return (
       <form
         className='loginForm'

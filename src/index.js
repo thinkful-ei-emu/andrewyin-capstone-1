@@ -5,16 +5,19 @@ import './index.css';
 import App from './components/App/App';
 import { CharacterListProvider } from './contexts/CharacterListContext';
 import { CharacterProvider } from './contexts/CharacterContext';
+import { UserProvider } from './contexts/UserContext';
 import * as serviceWorker from './serviceWorker';
 
 
 ReactDOM.render(
   <BrowserRouter>
-    <CharacterListProvider>
-      <CharacterProvider>
-        <App />
-      </CharacterProvider>
-    </CharacterListProvider>
+    <UserProvider>
+      <CharacterListProvider>
+        <CharacterProvider>
+          <App />
+        </CharacterProvider>
+      </CharacterListProvider>
+    </UserProvider>
   </BrowserRouter>,
   document.getElementById('root')
 );

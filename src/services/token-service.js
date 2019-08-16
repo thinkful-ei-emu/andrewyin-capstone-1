@@ -1,4 +1,5 @@
 import config from '../config';
+// require('dotenv').config();
 
 const TokenService = {
   saveAuthToken(token) {
