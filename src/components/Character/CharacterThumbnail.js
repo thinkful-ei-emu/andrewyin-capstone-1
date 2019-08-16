@@ -4,6 +4,13 @@ import { Link } from 'react-router-dom';
 import './CharacterThumbnail.css';
 
 class CharacterThumbnail extends React.Component {
+  static defaultProps = {
+    charId: 0,
+    charName: '',
+    charRace: '',
+    charClass: ''
+  }
+  
   render() {
     return (
       <li className="characterThumbnail">

@@ -26,7 +26,8 @@ class CharacterList extends React.Component {
       return (
         <CharacterThumbnail
           key={index}
-          charId={character.charId}
+          charId={index}
+          // charId={character.charId}
           charName={character.charName}
           charRace={character.charRace}
           charClass={character.charClass}
