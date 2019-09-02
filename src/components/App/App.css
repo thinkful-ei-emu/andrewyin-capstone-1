@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 .app {
   display: flex;
   flex-direction: column;
@@ -9,4 +5,42 @@
   position: relative;
   top: 80px;
   width: 100%;
+}
+
+.parallax {
+  background-image: url('scag_1920x1080.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 100vh;
+  overflow-y: auto;
+  /* background-color: black; */
+}
+
+.frosted-glass {
+  /* height: 50px; */
+  background: inherit;
+  /* overflow: hidden; */
+  z-index: 1;
+  /* background-color: red; */
+}
+
+.frosted-glass:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: inherit;
+  /* background-color: white; */
+  box-shadow: inset 0 0 3000px rgba(255, 255, 255, .5);
+  /* opacity: 0.75; */
+  filter: blur(10px);
+  /* background-color: white; */
+  margin: -10px;
+  /* overflow: hidden; */
 }

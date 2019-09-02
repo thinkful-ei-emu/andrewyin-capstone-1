@@ -10,11 +10,11 @@ import './HamburgerMenu.css';
 class Hamburger extends React.Component {
 
   static contextType = UserContext;
-  
+
   openSideNav() {
     document.getElementById('sideNav').style.width = '200px';
   }
-  
+
   closeSideNav() {
     document.getElementById('sideNav').style.width = '0';
   }
@@ -25,14 +25,16 @@ class Hamburger extends React.Component {
 
   render() {
     return <>
-      <div id='navOpen' className='nav-open'>
-        {this.context.loggedIn &&
-          <span className='hamburger' onClick={this.openSideNav}>
-            <div className='hamburger-bar'></div>
-            <div className='hamburger-bar'></div>
-            <div className='hamburger-bar'></div>
-          </span>}
-        <h3 className='navbar-header'>5e Stuff</h3>
+      <div className='top-nav frosted-glass'>
+        <div className='navbar-content'>
+          {this.context.loggedIn &&
+              <span className='hamburger' onClick={this.openSideNav}>
+                <div className='hamburger-bar'></div>
+                <div className='hamburger-bar'></div>
+                <div className='hamburger-bar'></div>
+              </span>}
+          <h3 className='navbar-header'>5e Stuff</h3>
+        </div>
       </div>
 
       <nav id='sideNav' className='side-nav'>

@@ -1,13 +1,11 @@
 import React from 'react';
 
-// import CharacterContext from '../../contexts/CharacterContext';
 import CharacterListContext from '../../contexts/CharacterListContext';
 import CharacterAPIService from '../../services/characters-api-service';
 
 import './CharacterSheet.css';
 
 class CharacterSheet extends React.Component {
-  // static contextType = CharacterContext;
   static contextType = CharacterListContext;
 
   async componentDidMount() {
@@ -16,7 +14,6 @@ class CharacterSheet extends React.Component {
       this.context.setCharactersList(characters);
     }
     catch (e) {
-      // console.error(e);
       this.context.setError(e);
     }
   }

@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-import CharacterThumbnail from '../Character/CharacterThumbnail';
+import CharacterThumbnail from './CharacterThumbnail';
 import CharacterAPIService from '../../services/characters-api-service';
 import CharacterListContext from '../../contexts/CharacterListContext';
 import './CharacterList.css';

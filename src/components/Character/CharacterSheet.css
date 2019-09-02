@@ -1,5 +1,8 @@
 .characterSheet {
+  width: 80%;
   margin: 5px;
   padding: 10px;
   border: 1px black solid;
+  background: white;
+  opacity: 0.75;
 }

@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './components/App/App';
+import HamburgerMenu from './components/Hamburger/HamburgerMenu';
 import { CharacterListProvider } from './contexts/CharacterListContext';
-import { CharacterProvider } from './contexts/CharacterContext';
 import { UserProvider } from './contexts/UserContext';
 import * as serviceWorker from './serviceWorker';
 
@@ -13,9 +13,7 @@ ReactDOM.render(
   <BrowserRouter>
     <UserProvider>
       <CharacterListProvider>
-        <CharacterProvider>
-          <App />
-        </CharacterProvider>
+        <App />
       </CharacterListProvider>
     </UserProvider>
   </BrowserRouter>,

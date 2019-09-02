@@ -1,0 +1,47 @@
+.characterCreatePage {
+  width: 80%;
+}
+
+.characterCreateForm {
+  border: 1px black solid;
+  border-top: none;
+  /* width: 90vw; */
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background: white;
+  opacity: 0.75;
+}
+
+.characterCreateNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.characterCreateTabs {
+  padding: 10px 0;
+  width: 20%;
+  text-align: center;
+  border-bottom: 1px solid black;
+  background: white;
+  opacity: 0.75;
+  /* box-shadow: 0 -5px 5px 0px white; */
+}
+
+.characterCreateTabs:hover {
+  cursor: pointer;
+}
+
+.active {
+  border: 1px solid black;
+  border-bottom: none;
+}
+
+.submitSection button {
+  margin-right: 10px;
+  width: 80px;
+}
